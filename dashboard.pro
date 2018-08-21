@@ -12,6 +12,7 @@ TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
+CONFIG += silent warn_on shared_and_static
 
 unix:!macx: LIBS += -lcsys
 
@@ -49,12 +50,12 @@ SOURCES += \
     presources.cpp \
     signal_mapper.cpp
 
+RESOURCES += \
+    icons.qrc
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    icons.qrc
 
 
