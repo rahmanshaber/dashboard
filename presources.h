@@ -22,7 +22,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 
 #include "utilities.h"
 #include "history_chart.h"
-#include "info_manager.h"
+#include "csys/info_manager.h"
 
 
 namespace Ui {

@@ -25,9 +25,9 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QFont>
 #include <QObject>
 
-#include "info_manager.h"
 #include "circlebar.h"
-#include "Info/system_info.h"
+#include "csys/info_manager.h"
+#include "csys/system_info.h"
 
 
 namespace Ui {

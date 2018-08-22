@@ -12,9 +12,11 @@ TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
-CONFIG += silent warn_on shared_and_static
+CONFIG += silent warn_on
 
-unix:!macx: LIBS += -lcsys
+# library for theme and components
+unix:!macx: LIBS += /usr/lib/libcprime.a
+unix:!macx: LIBS += /usr/lib/libcsys.a
 
 FORMS += \
     circlebar.ui \

@@ -36,8 +36,8 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QDir>
 #include <QSize>
 
-#include "Info/system_info.h"
-#include "utilities/utilities.h"
+#include "csys/system_info.h"
+#include "cprime/utilities.h"
 
 
 class UDisks2;

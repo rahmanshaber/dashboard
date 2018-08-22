@@ -6,9 +6,9 @@
 #include <QtCharts>
 #include <QTimer>
 
-#include "Utils/format_util.h"
-#include "dashboard/signal_mapper.h"
-#include "utilities/utilities.h"
+#include "csys/format_util.h"
+#include "signal_mapper.h"
+#include "cprime/utilities.h"
 
 
 namespace Ui {
