@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>DashBoard</string>
+   <string>Dashboard</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../icons.qrc">
-    <normaloff>:/app/icons/app-icons/DashBoard.svg</normaloff>:/app/icons/app-icons/DashBoard.svg</iconset>
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/Dashboard.svg</normaloff>:/icons/Dashboard.svg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -95,11 +95,11 @@
          <enum>Qt::LeftToRight</enum>
         </property>
         <property name="text">
-         <string notr="true">DashBoard</string>
+         <string notr="true">Dashboard</string>
         </property>
         <property name="icon">
-         <iconset resource="../icons.qrc">
-          <normaloff>:/app/icons/app-icons/DashBoard.svg</normaloff>:/app/icons/app-icons/DashBoard.svg</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/icons/Dashboard.svg</normaloff>:/icons/Dashboard.svg</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -145,7 +145,7 @@
          <string>General</string>
         </property>
         <property name="icon">
-         <iconset resource="../icons.qrc">
+         <iconset resource="icons.qrc">
           <normaloff>:/icons/general.svg</normaloff>:/icons/general.svg</iconset>
         </property>
         <property name="iconSize">
@@ -176,7 +176,7 @@
          <string>Drives</string>
         </property>
         <property name="icon">
-         <iconset resource="../icons.qrc">
+         <iconset resource="icons.qrc">
           <normaloff>:/icons/drive.svg</normaloff>:/icons/drive.svg</iconset>
         </property>
         <property name="iconSize">
@@ -207,7 +207,7 @@
          <string>Battery</string>
         </property>
         <property name="icon">
-         <iconset resource="../icons.qrc">
+         <iconset resource="icons.qrc">
           <normaloff>:/icons/battery.svg</normaloff>:/icons/battery.svg</iconset>
         </property>
         <property name="iconSize">
@@ -238,7 +238,7 @@
          <string>Resource</string>
         </property>
         <property name="icon">
-         <iconset resource="../icons.qrc">
+         <iconset resource="icons.qrc">
           <normaloff>:/icons/resource.svg</normaloff>:/icons/resource.svg</iconset>
         </property>
         <property name="iconSize">
@@ -269,7 +269,7 @@
          <string>Display</string>
         </property>
         <property name="icon">
-         <iconset resource="../icons.qrc">
+         <iconset>
           <normaloff>:/icons/desktop.svg</normaloff>:/icons/desktop.svg</iconset>
         </property>
         <property name="iconSize">
@@ -523,7 +523,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../icons.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>

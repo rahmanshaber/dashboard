@@ -24,7 +24,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QMetaProperty>
 #include <QStringListModel>
 
-#include "cprime/utilities.h"
+#include <cprime/utilities.h>
 
 
 namespace Ui {
