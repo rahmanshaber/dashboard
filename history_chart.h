@@ -6,9 +6,8 @@
 #include <QtCharts>
 #include <QTimer>
 
-#include "csys/format_util.h"
-#include "signal_mapper.h"
-
+#include <csys/format_util.h>
+#include <signal_mapper.h>
 #include <cprime/utilities.h>
 
 

@@ -6,17 +6,12 @@
 
 QT       += core gui widgets charts dbus network
 
-TARGET = about
+TARGET   = dashboard
 TEMPLATE = app
 
-DEFINES += QT_DEPRECATED_WARNINGS
-
-CONFIG += c++11
-CONFIG += silent warn_on
-
 # library for theme and components
-unix:!macx: LIBS += /usr/lib/libcprime.a
-unix:!macx: LIBS += /usr/lib/libcsys.a
+unix:!macx: LIBS += -lcprime
+unix:!macx: LIBS += -L/usr/lib -lcsys
 
 FORMS += \
     circlebar.ui \

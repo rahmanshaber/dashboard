@@ -23,7 +23,7 @@ dashboard::dashboard(QWidget *parent) :QWidget(parent),ui(new Ui::dashboard)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(":/appStyle/style/DashBoard.qss"));
+    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::DashBoardStyle));
 
     // set window size
     int x = static_cast<int>(Utilities::screensize().width()  * .8);

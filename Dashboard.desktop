@@ -2,7 +2,7 @@
 Name=Dashboard
 Comment=DashBorad is system resource viewer app from CoreApps.
 Exec=dashboard
-Icon=/usr/share/icons/CoreApps/DashBoard.svg
+Icon=/usr/share/icons/CoreApps/Dashboard.svg
 Type=Application
 Categories=Utility;Qt;System;
 Terminal=false

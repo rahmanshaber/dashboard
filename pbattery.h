@@ -17,14 +17,13 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #ifndef PBATTERY_H
 #define PBATTERY_H
 
-#include "upower.h"
-#include "battery.h"
-
 #include <QWidget>
 #include <QMetaProperty>
 #include <QStringListModel>
 
 #include <cprime/utilities.h>
+#include <csys/battery.h>
+#include <csys/upower.h>
 
 
 namespace Ui {

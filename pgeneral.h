@@ -17,6 +17,8 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #ifndef PGENERAL_H
 #define PGENERAL_H
 
+#include "circlebar.h"
+
 #include <QWidget>
 #include <QStringListModel>
 #include <QSysInfo>
@@ -25,9 +27,8 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QFont>
 #include <QObject>
 
-#include "circlebar.h"
-#include "csys/info_manager.h"
-#include "csys/system_info.h"
+#include <csys/info_manager.h>
+#include <csys/system_info.h>
 
 
 namespace Ui {

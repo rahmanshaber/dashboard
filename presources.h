@@ -17,11 +17,12 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #ifndef PRESOURCES_H
 #define PRESOURCES_H
 
+#include "utilities.h"
+#include "history_chart.h"
+
 #include <QWidget>
 #include <QTimer>
 
-#include "utilities.h"
-#include "history_chart.h"
 #include "csys/info_manager.h"
 
 

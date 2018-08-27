@@ -22,8 +22,6 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include "pdrives.h"
 #include "pgeneral.h"
 #include "presources.h"
-#include "battery.h"
-#include "upower.h"
 
 #include <QListWidgetItem>
 #include <QWidget>
@@ -36,8 +34,10 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QDir>
 #include <QSize>
 
-#include "csys/system_info.h"
+#include <csys/system_info.h>
 #include <cprime/utilities.h>
+#include <csys/battery.h>
+#include <csys/upower.h>
 
 
 class UDisks2;
@@ -65,6 +65,7 @@ protected:
 
 private:
     Ui::dashboard *ui;
+
     void pageClick(QPushButton *btn, int i, QString title);
 
 };
