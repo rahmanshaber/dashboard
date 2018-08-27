@@ -11,7 +11,9 @@ An app of CoreApps family.DashBorad is system resource viewer app.
 
 ### Dependencies:
 * qt5
+* qt5-charts
 * libcprime
+* libcsys
 
 ## Tested In
 * Manjaro xfce (Arch).
