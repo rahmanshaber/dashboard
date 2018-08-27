@@ -61,24 +61,19 @@ void HistoryChart::init()
     mChart->setMargins(QMargins(20, 0, 10, 10));
     ui->layoutHistoryChart->addWidget(mChartView, 1, 0, 1, 3);
 
-    // theme changed
-//    connect(SignalMapper::ins(), &SignalMapper::sigChangedAppTheme, [=] {
-//        QString chartLabelColor = "#7d8ea0";
-//        QString chartGridColor = "#7d8ea0";
-//        QString historyChartBackground = "#2B2A32";
+    // theme change
     QString chartLabelColor = Utilities::getStylesheetValue()->value("@color07").toString();
     QString chartGridColor = Utilities::getStylesheetValue()->value("@color05").toString();
     QString historyChartBackground = Utilities::getStylesheetValue()->value("@color06").toString();
 
-        mChart->axisX()->setLabelsColor(chartLabelColor);
-        mChart->axisX()->setGridLineColor(chartGridColor);
+    mChart->axisX()->setLabelsColor(chartLabelColor);
+    mChart->axisX()->setGridLineColor(chartGridColor);
 
-        mChart->axisY()->setLabelsColor(chartLabelColor);
-        mChart->axisY()->setGridLineColor(chartGridColor);
+    mChart->axisY()->setLabelsColor(chartLabelColor);
+    mChart->axisY()->setGridLineColor(chartGridColor);
 
-        mChart->setBackgroundBrush(QColor(historyChartBackground));
-        mChart->legend()->setLabelColor(chartLabelColor);
-//    });
+    mChart->setBackgroundBrush(QColor(historyChartBackground));
+    mChart->legend()->setLabelColor(chartLabelColor);
 }
 
 void HistoryChart::setYMax(const int &value)

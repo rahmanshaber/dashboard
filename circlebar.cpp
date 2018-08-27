@@ -53,12 +53,8 @@ void CircleBar::init()
 
     ui->layoutCircleBar->insertWidget(1, mChartView);
 
-//    connect(SignalMapper::ins(), &SignalMapper::sigChangedAppTheme, [=] {
-//        mChartView->setBackgroundBrush(QColor("#232729"));
-//        mSeries->slices().last()->setColor("#1b252f");
-//        mChartView->setBackgroundBrush(QColor(Utilities::getStylesheetValue()->value("@color01").toString()));
-        mSeries->slices().last()->setColor("#1b252f");
-//    });
+    mChartView->setBackgroundBrush(QColor(Utilities::getStylesheetValue()->value("@color01").toString()));
+    mSeries->slices().last()->setColor("#1b252f");
 }
 
 void CircleBar::setValue(const int &value, const QString &valueText)
