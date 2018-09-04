@@ -8,5 +8,7 @@
         <file>icons/resource.svg</file>
         <file>icons/Dashboard.svg</file>
         <file>icons/desktop.svg</file>
+        <file>icons/fullexit.svg</file>
+        <file>icons/fullscreen.svg</file>
     </qresource>
 </RCC>
