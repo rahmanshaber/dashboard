@@ -59,6 +59,7 @@ void dashboard::pageClick(QPushButton *btn, int i, QString title)
     btn->setChecked(true);
     ui->selectedsection->setText(title);
     ui->pages->setCurrentIndex(i);
+    this->setWindowTitle(title + " - DashBoard");
 }
 
 void dashboard::on_Bgeneral_clicked()
