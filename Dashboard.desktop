@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Dashboard
-Comment=DashBorad is system resource viewer app from CoreApps.
-Exec=dashboard
-Icon=/usr/share/coreapps/icons/Dashboard.svg
-Type=Application
-Categories=Utility;Qt;System;
-Terminal=false
-StartupNotify=true
