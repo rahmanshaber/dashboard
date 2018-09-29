@@ -1,7 +1,7 @@
 # DashBoard
 An app of CoreApps family.DashBorad is system resource viewer app.
 
-<img src="dashBorad.png" width="500">
+<img src="dashborad.png" width="500">
 
 ### Download
 
