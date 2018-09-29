@@ -6,9 +6,9 @@
         <file>icons/general.svg</file>
         <file>icons/refresh.svg</file>
         <file>icons/resource.svg</file>
-        <file>icons/Dashboard.svg</file>
         <file>icons/desktop.svg</file>
         <file>icons/fullexit.svg</file>
         <file>icons/fullscreen.svg</file>
+        <file>icons/dashboard.svg</file>
     </qresource>
 </RCC>
