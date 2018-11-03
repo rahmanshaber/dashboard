@@ -8,7 +8,7 @@
 
 #include <csys/format_util.h>
 #include <signal_mapper.h>
-#include <cprime/utilities.h>
+#include <cprime/themefunc.h>
 
 
 namespace Ui {

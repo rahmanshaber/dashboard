@@ -46,9 +46,8 @@ void presources::init()
 
     for (QWidget *widget : widgets) {
         ui->chartsLayout->addWidget(widget);
+        CPrime::ThemeFunc::addDropShadow(widget,40);
     }
-
-    Utilities::addDropShadow(widgets, 40);
 
     connect(mTimer, &QTimer::timeout, this, &presources::updateCpuChart);
     connect(mTimer, &QTimer::timeout, this, &presources::updateCpuLoadAvg);

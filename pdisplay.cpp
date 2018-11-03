@@ -93,7 +93,7 @@ void pDisplay::setupDisplayPage()
               << defultOrientation << setOrientation;
 
 
-        QStringListModel *displayInfo = new QStringListModel(Utilities::fStringList(left, right, p->font()));
+        QStringListModel *displayInfo = new QStringListModel(CPrime::StringFunc::fStringList(left, right, p->font()));
 
         p->setModel(displayInfo);
 
@@ -105,7 +105,7 @@ void pDisplay::setupDisplayPage()
         v->addWidget(b);
         w->setLayout(v);
 
-        Utilities::addDropShadow(w, 40);
+        CPrime::ThemeFunc::addDropShadow(w, 40);
 
         ui->list->addWidget(w);
 
