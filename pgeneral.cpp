@@ -14,9 +14,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, see {http://www.gnu.org/licenses/}. */
 
+#include <cprime/cprime.h>
 #include "pgeneral.h"
 #include "ui_pgeneral.h"
-
 
 pgeneral::pgeneral(QWidget *parent) :QWidget(parent),ui(new Ui::pgeneral),
     cpuBar(new CircleBar(tr("CPU"), {"#A8E063", "#56AB2F"}, this)),
@@ -83,8 +83,14 @@ void pgeneral::systemInformationInit()
 
 void pgeneral::updateCpuBar()
 {
-    int cpuUsedPercent = im->getCpuPercents().at(0);
+    int cpuUsedPercent = 0;
+    int cpuCount = im->getCpuCoreCount();
 
+    foreach (int i, im->getCpuPercents()) {
+        cpuUsedPercent += i;
+    }
+
+    cpuUsedPercent = static_cast<int>(cpuUsedPercent / cpuCount);
     cpuBar->setValue(cpuUsedPercent, QString("%1%").arg(cpuUsedPercent));
 }
 
