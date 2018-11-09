@@ -28,8 +28,6 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QtMath>
 #include <QGroupBox>
 
-#include <cprime/themefunc.h>
-
 
 namespace Ui {
 class pDisplay;
