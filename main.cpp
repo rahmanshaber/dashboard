@@ -20,13 +20,15 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QFont>
 #include <QStyleFactory>
 
+#include <cprime/validityfunc.h>
+
 
 void startSetup()
 {
     QApplication::setStyle(QStyleFactory::create("Fusion"));
 
     // set the requried folders
-    Utilities::setupFileFolder(Utilities::FileFolderSetup::DriveMountFolder);
+    CPrime::ValidityFunc::setupFileFolder(CPrime::FileFolderSetup::DriveMountFolder);
 
     // if setting file not exist create one with defult
     SettingsManage sm;

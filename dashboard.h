@@ -35,7 +35,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QSize>
 
 #include <csys/system_info.h>
-#include <cprime/utilities.h>
+#include <cprime/themefunc.h>
 #include <csys/battery.h>
 #include <csys/upower.h>
 

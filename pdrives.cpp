@@ -23,10 +23,10 @@ pDrives::pDrives(QWidget *parent) :QWidget(parent),ui(new Ui::pDrives)
     ui->setupUi(this);
     setupDisksPage();
     ui->mm->setText("Select a Partition to");
-    Utilities::addDropShadow(ui->alldrives,40);
-    Utilities::addDropShadow(ui->logs,40);
-    Utilities::addDropShadow(ui->partiton,40);
-    Utilities::addDropShadow(ui->properties,40);
+    CPrime::ThemeFunc::addDropShadow(ui->alldrives,40);
+    CPrime::ThemeFunc::addDropShadow(ui->logs,40);
+    CPrime::ThemeFunc::addDropShadow(ui->partiton,40);
+    CPrime::ThemeFunc::addDropShadow(ui->properties,40);
 }
 
 pDrives::~pDrives()
@@ -46,7 +46,8 @@ QString pDrives::getDriveInfo(const QString path)
     double f = QStorageInfo(path).bytesFree();
 
     // Function from utilities.cpp
-    return QString("%1  /  %2  (%3%)").arg(Utilities::formatSize(static_cast<int>(f))).arg(Utilities::formatSize(static_cast<int>(t))).arg((t - f)*100/t);
+    return QString("%1  /  %2  (%3%)").arg(CPrime::FileFunc::formatSize(static_cast<quint64>(f)))
+                                           .arg(CPrime::FileFunc::formatSize(static_cast<quint64>(t))).arg((t - f)*100/t);
 }
 
 void pDrives::setupDisksPage()
@@ -107,7 +108,7 @@ void pDrives::on_drives_currentTextChanged(const QString &currentText)
           << dr->toStringToSeperate(10);
 
 
-    QStringListModel *systemInfoModel = new QStringListModel(Utilities::fStringList(left, right, ui->info->font()));
+    QStringListModel *systemInfoModel = new QStringListModel(CPrime::StringFunc::fStringList(left, right, ui->info->font()));
 
     ui->info->setModel(systemInfoModel);
 }
@@ -129,7 +130,7 @@ void pDrives::on_blocks_currentTextChanged(const QString &currentText)
               << block->toStringToSeperate(7) << block->toStringToSeperate(8) << path
               << getDriveInfo(path);
 
-        QStringListModel *systemInfoModel = new QStringListModel(Utilities::fStringList(left, right, ui->info->font()));
+        QStringListModel *systemInfoModel = new QStringListModel(CPrime::StringFunc::fStringList(left, right, ui->info->font()));
 
         ui->info->setModel(systemInfoModel);
     }
@@ -195,7 +196,7 @@ void pDrives::on_mount_2_clicked()
     auto fs = disks->blockDevice(ui->blocks->currentItem()->text())->fileSystem();
 
     if (fs)
-        Utilities::messageEngine("Directory '" + fs->mount() + "' mounted.", Utilities::MessageType::Info);
+        CPrime::InfoFunc::messageEngine("Directory '" + fs->mount() + "' mounted.", CPrime::MessageType::Info,this);
 }
 
 void pDrives::on_unmount_2_clicked()
@@ -205,7 +206,7 @@ void pDrives::on_unmount_2_clicked()
     auto fs = disks->blockDevice(ui->blocks->currentItem()->text())->fileSystem();
     if (fs) {
         fs->unmount();
-        Utilities::messageEngine("Partition '" + fs->name + "' unmounted.", Utilities::MessageType::Info);
+        CPrime::InfoFunc::messageEngine("Partition '" + fs->name + "' unmounted.", CPrime::MessageType::Info,this);
     }
 }
 

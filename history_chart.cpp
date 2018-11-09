@@ -62,9 +62,9 @@ void HistoryChart::init()
     ui->layoutHistoryChart->addWidget(mChartView, 1, 0, 1, 3);
 
     // theme change
-    QString chartLabelColor = Utilities::getStylesheetValue()->value("@color07").toString();
-    QString chartGridColor = Utilities::getStylesheetValue()->value("@color05").toString();
-    QString historyChartBackground = Utilities::getStylesheetValue()->value("@color06").toString();
+    QString chartLabelColor = CPrime::ThemeFunc::getStyleSheet()->value("@color07").toString();
+    QString chartGridColor = CPrime::ThemeFunc::getStyleSheet()->value("@color05").toString();
+    QString historyChartBackground = CPrime::ThemeFunc::getStyleSheet()->value("@color06").toString();
 
     mChart->axisX()->setLabelsColor(chartLabelColor);
     mChart->axisX()->setGridLineColor(chartGridColor);
